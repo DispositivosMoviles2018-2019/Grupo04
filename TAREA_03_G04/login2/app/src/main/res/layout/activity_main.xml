@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/optativa" />
+    <!--    <TextView
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="@string/saludo"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:typeface="serif" />-->
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/usuario"
+        android:hint="@string/user"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/letras" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/candadoaset"
+        android:hint="@string/pass"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/letras"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="191dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/boton"
+        android:drawableLeft="@drawable/input"
+        android:text="@string/boton"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
