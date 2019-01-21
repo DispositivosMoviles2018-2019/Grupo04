@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="VEHICULOS DISPONIBLES"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Placa:"
+                android:textColor="#ff000000" />
+
+            <Spinner
+                android:id="@+id/spinPlacas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="correo@mail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Celular:"
+                android:textColor="#ff000000" />
+
+            <EditText
+                android:id="@+id/txtCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0998890986"
+                android:inputType="textPersonName"
+                android:maxLength="10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fecha de Prestamo:"
+                android:textColor="#ff000000" />
+
+            <EditText
+                android:id="@+id/txtFechaP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2019-01-22"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fecha de Entrega:"
+                android:textColor="#ff000000" />
+
+            <EditText
+                android:id="@+id/txtFechaE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2019-01-22"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/txtValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="right"
+                android:text="Valor a pagar: $80.0"
+                android:textColor="#ff000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="botonOK"
+                    android:text="Reservar" />
+
+                <Button
+                    android:id="@+id/btn_respaldoR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="respaldo"
+                    android:text="Respaldo"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="botonCancelar"
+                    android:text="CANCELAR" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_listarR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="listarReservas"
+                android:text="LISTAR RESERVAS" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

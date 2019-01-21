@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+
+    <CheckBoxPreference
+        android:title="Ordenar de manera Ascendente"
+        android:defaultValue="1"
+        android:key="asc"
+        />
+</PreferenceScreen>

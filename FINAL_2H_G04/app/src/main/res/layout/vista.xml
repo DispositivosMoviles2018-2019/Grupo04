@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="#ff0000ff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placa"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img"
+        android:gravity="right"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/marca"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img"
+        android:gravity="right"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/costo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fecha"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img"
+        android:gravity="right"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/matriculado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/costo"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img"
+        android:gravity="right"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matriculado"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img"
+        android:gravity="right"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/reservado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img"
+        android:gravity="right"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+</RelativeLayout>
